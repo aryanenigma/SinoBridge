@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sino Bridge Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services-hero {
+            padding: 8rem 0 4rem;
+            background: var(--color-black);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .services-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .services-hero p {
+            font-size: 1.25rem;
+            color: var(--color-gray-300);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .service-detail {
+            padding: 6rem 0;
+        }
+
+        .service-detail:nth-child(even) {
+            background: var(--color-gray-100);
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-detail-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-detail-content p {
+            color: var(--color-gray-600);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .service-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-gray-200);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            font-weight: 700;
+            color: var(--color-black);
+            font-size: 1.25rem;
+        }
+
+        .pricing-card {
+            background: var(--color-white);
+            padding: 2rem;
+            border: 2px solid var(--color-gray-200);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .pricing-card .price-note {
+            color: var(--color-gray-500);
+            font-size: 0.9rem;
+        }
+
+        .service-image {
+            height: 400px;
+            background: var(--color-gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SinoBridge Media</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Complete Solutions for Indian Market Entry</h1>
+            <p>From physical product displays to comprehensive digital marketing, we provide everything Chinese manufacturers need to succeed in India</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+     <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>Website Development</h2>
+                    <p>Your digital storefront in India. We build professional, SEO-optimized websites that attract and convert Indian customers while establishing your brand credibility.</p>
+                    
+                    <ul class="service-features">
+                        <li>Custom website design and development</li>
+                        <li>Mobile-responsive layouts</li>
+                        <li>SEO optimization for Indian market</li>
+                        <li>Google search ranking improvement</li>
+                        <li>Integration with social media</li>
+                        <li>Regular updates and maintenance</li>
+                        <li>Analytics and performance tracking</li>
+                    </ul>
+
+                    <div class="pricing-card">
+                        <h3>One-Time + Monthly</h3>
+                        <div class="price">¥600 + ¥50</div>
+                        <p class="price-note">¥600 one-time development fee<br>
+                        ¥50/month maintenance and hosting</p>
+                    </div>
+                </div>
+               <div class="service-image">
+  <img 
+    src="Images\Gemini_Generated_Image_xsxkgtxsxkgtxsxk (3).png"
+    alt="Product Display"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+              <div class="service-image">
+  <img 
+    src="Images\Gemini_Generated_Image_xsxkgtxsxkgtxsxk (2).png"
+    alt="Product Display"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+                <div class="service-detail-content">
+                    <h2>Digital Promotion</h2>
+                    <p>Reach millions of potential Indian customers through strategic social media marketing. We create, manage, and optimize campaigns across all major platforms.</p>
+                    
+                    <ul class="service-features">
+                        <li>Instagram marketing and content creation</li>
+                        <li>Facebook ads and community building</li>
+                        <li>WhatsApp Business integration</li>
+                        <li>Google Ads campaign management</li>
+                        <li>Daily content posting and engagement</li>
+                        <li>Performance tracking and reporting</li>
+                    </ul>
+
+                    <div class="pricing-card">
+                        <h3>Affordable Packages</h3>
+                        <div class="price">¥150 - ¥250</div>
+                        <p class="price-note">Instagram + WhatsApp: ¥150/month<br>
+                        Facebook + Instagram: ¥150/month<br>
+                        All Platforms: ¥250/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-image">
+  <img 
+    src="Images\Gemini_Generated_Image_xsxkgtxsxkgtxsxk (4).png"
+    alt="Product Display"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+                <div class="service-detail-content">
+                    <h2>Customer Interaction</h2>
+                    <p>Don't let language or time zones be a barrier. Our bilingual team handles all customer communications, ensuring no opportunity is missed.</p>
+                    
+                    <ul class="service-features">
+                        <li>Bilingual support (Hindi, English, Chinese)</li>
+                        <li>24/7 customer inquiry handling</li>
+                        <li>Order processing and follow-up</li>
+                        <li>Customer relationship management</li>
+                        <li>Guaranteed response within 2 hours</li>
+                        <li>Monthly performance reports</li>
+                        <li>Lead qualification and nurturing</li>
+                    </ul>
+
+                    <div class="pricing-card">
+                        <h3>Included in All Packages</h3>
+                        <div class="price">Included</div>
+                        <p class="price-note">Customer interaction is included in all our service packages at no additional cost</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="service-detail">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>Product Display in India</h2>
+                    <p>Establish a physical presence in India without the overhead. Our mini shop solutions provide offline counters where potential customers can see, touch, and experience your products firsthand.</p>
+                    
+                    <ul class="service-features">
+                        <li>Prime location in major Indian cities</li>
+                        <li>Professional product presentation</li>
+                        <li>Trained staff for customer interaction</li>
+                        <li>Physical product samples display</li>
+                        <li>Direct customer feedback collection</li>
+                        <li>Order inquiry management</li>
+                    </ul>
+
+                    <div class="pricing-card">
+                        <h3>Flexible Pricing</h3>
+                        <div class="price">¥10 - ¥40</div>
+                        <p class="price-note">¥10/month for 2 products | ¥40/month for 5 products</p>
+                    </div>
+                </div>
+               <div class="service-image">
+  <img 
+    src="Images/Gemini_Generated_Image_xsxkgtxsxkgtxsxk.png"
+    alt="Product Display"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Indian Market Journey?</h2>
+                <p class="cta-subtitle">Contact us today for a free consultation and customized package</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">SinoBridge Media</h3>
+                    <p class="footer-description">Connecting Chinese manufacturers to the Indian market through innovative digital and offline solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Product Display</a></li>
+                        <li><a href="services.html">Digital Promotion</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Customer Interaction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/918586001783" target="_blank">WhatsApp</a></li>
+                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SinoBridge Media. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918586001783" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients - Sino Bridge Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .clients-hero {
+            padding: 8rem 0 4rem;
+            background: var(--color-black);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .clients-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .clients-hero p {
+            font-size: 1.25rem;
+            color: var(--color-gray-300);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .clients-content {
+            padding: 6rem 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .testimonial-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-200);
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--color-black);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-logo {
+            width: 60px;
+            height: 60px;
+            background: var(--color-gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .testimonial-info h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: var(--color-gray-500);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-quote {
+            color: var(--color-gray-700);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-results {
+            display: flex;
+            gap: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .result-item {
+            flex: 1;
+        }
+
+        .result-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            color: var(--color-black);
+        }
+
+        .result-label {
+            font-size: 0.875rem;
+            color: var(--color-gray-500);
+        }
+
+        .industry-section {
+            padding: 4rem 0;
+            background: var(--color-gray-100);
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .industry-card {
+            background: var(--color-white);
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid var(--color-gray-200);
+            transition: all 0.3s ease;
+        }
+
+        .industry-card:hover {
+            border-color: var(--color-black);
+        }
+
+        .industry-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: var(--color-black);
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .industry-icon svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .industry-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .industry-card p {
+            color: var(--color-gray-600);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-results {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SinoBridge Media</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="clients.html" class="active">Clients</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Clients Hero -->
+    <section class="clients-hero">
+        <div class="container">
+            <h1>Success Stories from Our Clients</h1>
+            <p>See how we've helped Chinese manufacturers successfully expand into the Indian market</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="clients-content">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Testimonials</span>
+                <h2 class="section-title">Real Results<br>Real Growth</h2>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">DM</div>
+                        <div class="testimonial-info">
+                            <h3>Dragon Manufacturing Co.</h3>
+                            <p>Electronics & Components</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"SinoBridge Media transformed our Indian market entry. Within 6 months, we established a strong presence and generated consistent leads. Their team's understanding of both Chinese and Indian business culture was invaluable."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">300%</div>
+                            <div class="result-label">Sales Increase</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">500+</div>
+                            <div class="result-label">Monthly Leads</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">GT</div>
+                        <div class="testimonial-info">
+                            <h3>Golden Textiles Ltd.</h3>
+                            <p>Textile & Fashion</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"The product display service was a game-changer. Indian buyers could see and feel our fabric quality, which online marketing alone couldn't achieve. Our conversion rate increased dramatically."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">5</div>
+                            <div class="result-label">Cities Covered</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">250%</div>
+                            <div class="result-label">ROI Growth</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">PE</div>
+                        <div class="testimonial-info">
+                            <h3>Phoenix Equipment</h3>
+                            <p>Industrial Machinery</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"From website development to social media management, SinoBridge handled everything professionally. Their bilingual customer service team ensured we never missed an opportunity."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">1000+</div>
+                            <div class="result-label">Website Visits</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">98%</div>
+                            <div class="result-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">SS</div>
+                        <div class="testimonial-info">
+                            <h3>Silver Star Trading</h3>
+                            <p>Consumer Electronics</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"Best decision we made for entering India. The comprehensive approach - combining offline displays with digital marketing - created the perfect entry strategy for us."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">15</div>
+                            <div class="result-label">Distributors</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">400%</div>
+                            <div class="result-label">Revenue Growth</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">LP</div>
+                        <div class="testimonial-info">
+                            <h3>Lotus Plastics Industry</h3>
+                            <p>Packaging Solutions</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"Their digital promotion package delivered exceptional results. We're now a recognized brand in the Indian packaging industry, thanks to their targeted social media campaigns."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">2M+</div>
+                            <div class="result-label">Social Reach</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">600+</div>
+                            <div class="result-label">Quality Inquiries</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-logo">IG</div>
+                        <div class="testimonial-info">
+                            <h3>Iron Giant Industries</h3>
+                            <p>Construction Materials</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"SinoBridge's team became an extension of our company. Their customer interaction service ensured every Indian inquiry was handled professionally and promptly."</p>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <div class="result-number">20+</div>
+                            <div class="result-label">Major Contracts</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-number">24/7</div>
+                            <div class="result-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="industry-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Industries We Serve</span>
+                <h2 class="section-title">Diverse Expertise<br>Across Sectors</h2>
+            </div>
+
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>Consumer electronics, components, and accessories</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Textiles</h3>
+                    <p>Fabrics, garments, and fashion accessories</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3>Machinery</h3>
+                    <p>Industrial equipment and manufacturing tools</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <h3>Packaging</h3>
+                    <p>Plastic, paper, and custom packaging solutions</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Construction</h3>
+                    <p>Building materials and construction supplies</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v6m0 6v6m8.66-8.66l-5.2 3M8.54 14l-5.2 3m13.12 0l-5.2-3M8.54 10l-5.2-3"></path>
+                        </svg>
+                    </div>
+                    <h3>Automotive</h3>
+                    <p>Auto parts, accessories, and components</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Success Stories</h2>
+                <p class="cta-subtitle">Let's make your Indian market expansion a success</p>
+                <a href="index.html#contact" class="btn btn-primary btn-large">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">SinoBridge Media</h3>
+                    <p class="footer-description">Connecting Chinese manufacturers to the Indian market through innovative digital and offline solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Product Display</a></li>
+                        <li><a href="services.html">Digital Promotion</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="services.html">Customer Interaction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/918586001783" target="_blank">WhatsApp</a></li>
+                        <li><a href="#">WeChat</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SinoBridge Media. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918586001783" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
